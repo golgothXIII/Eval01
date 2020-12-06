@@ -4,12 +4,25 @@ body {
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 10px;
+  min-width: 430px;
+  max-width: 1240px;
 }
+
+.logo {
+  border-radius: 50%;
+  border: lightgray solid 1px;
+}
+
 .menu {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   font-size: 1.5em;
-  border: black solid 1px;
   margin-left: 0;
   padding-left: 0;
   list-style: none;
