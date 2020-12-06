@@ -1,5 +1,18 @@
 body {
   font-size: 16px;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+
+}
+
+header, main, footer {
+  border-radius: 10px;
+  min-width: 500px;
+  max-width: 1240px;
 }
 
 header {
@@ -7,9 +20,6 @@ header {
   align-items: center;
   justify-content: space-around;
   box-shadow: 5px 5px 5px gray;
-  border-radius: 10px;
-  min-width: 430px;
-  max-width: 1240px;
 }
 
 .logo {
@@ -39,4 +49,38 @@ header {
 
 .item-menu:active {
   background: lightblue;
+}
+main {
+  box-shadow: 5px 5px 5px lightgrey;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  background: rgba(135, 206, 250, 0.5);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+section {
+  background: rgba(135, 206, 250, 0.2);
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+section > h2 {
+  font-size: 1.5em;
+}
+section > p {
+  text-align: justify;
+}
+
+/* permet de centrer l'image */
+section > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
