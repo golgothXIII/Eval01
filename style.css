@@ -39,7 +39,6 @@ header {
 /* Menu style */
 .menu {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   font-size: 1.5em;
@@ -47,9 +46,16 @@ header {
   padding-left: 0;
   }
 
+/* online menu display on screen> 850px else display on one columns */
+@media screen and (max-width: 850px){
+  .menu {
+    flex-direction: column;
+  }
+}
+
 .item-menu {
-  padding: 2vw;
   margin: 10px;
+  padding: 10px;
   width: 150px;
   background: lightskyblue;
   border-radius: 5px;
@@ -65,6 +71,9 @@ header {
 main {
   box-shadow: 5px 5px 5px lightgrey;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 h1 {
@@ -74,6 +83,7 @@ h1 {
   border-radius: 5px;
   text-transform: uppercase;
   font-size: 2em;
+  width:100%
 }
 
 /* Section Style */
@@ -82,6 +92,7 @@ section {
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 10px;
+  width:100%;
 }
 
 section > h2 {
@@ -91,22 +102,27 @@ section > p {
   text-align: justify;
 }
 
-/* Section card event style */
-.event-card {
-
-}
-
-.event-date {
-  text-decoration: underline;
-  font-style: italic;
-}
-
 /* Center image */
 section > img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* event style */
+/* if the screen is more than 1200 px the events are displayed in 2 columns */
+@media screen and (min-width: 1200px) {
+  .event-card {
+    width: 520px;
+  }
+
+}
+.event-date {
+  text-decoration: underline;
+  font-style: italic;
+}
+/* End event style*/
+
 /* End main style */
 
 /* Footer style */
